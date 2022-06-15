@@ -1,0 +1,22 @@
+img {
+  height: 20%;
+  margin-right: 20px;
+}
+
+a {
+  font-size: 20px !important;
+}
+
+.h1El {
+  margin: 0%;
+  color: black;
+  text-align: left;
+}
+
+.topNav {
+  background-image: url("./360_F_279846296_1dEp57xWW86PPhQjoj2oBwHpn419BSH2.jpeg");
+}
+
+.logInMsg {
+  text-align: center;
+}
