@@ -1,0 +1,197 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopKeep App</title>
+    <link rel="stylesheet" type="text/css" href="./public/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="topNav nav-extended blue darken-4">
+      <div class="nav-wrapper">
+        <h1 class="h1El"></h1>
+        <div class="right responsive-img">
+          <img class="circle" src="./public/images/My project.jpg" alt="logo" />
+        </div>
+      </div>
+      <!-- NAVIGATION -->
+      <div class="nav-content navEl">
+        <ul class="tabs tabs-transparent">
+          <li id="homeBtn" class="tab"><a href="#test3">Home</a></li>
+          <li class="tab">
+            <a
+              href="file:/Users/peterbookmyer/Desktop/Front-End-Inventory-Mgmt/project-2-handlebars/inventory.handlebar.html"
+              >View Inventory</a
+            >
+          </li>
+          <li class="tab"><a href="#test2">View Users</a></li>
+          <li class="tab">
+            <a
+              href="file:///Users/peterbookmyer/Desktop/Front-End-Inventory-Mgmt/project-2-handlebars/main.handlebar.html"
+              >Logout</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h2 class="logInMsg">Your Current Users</h2>
+    <main>
+      <div>
+        <div class="tablediv">
+          <!-- BUTTON TO ACTIVATE ADD USER MODAL -->
+          <a
+            id="addUserBtn"
+            class="addbtn waves-effect waves-light btn-large red"
+            ><i class="material-icons left">create</i>Add Item
+          </a>
+          <!-- MODAL -->
+          <div id="modalAddUser" class="modal">
+            <div class="modal-content">
+              <h4>Add Inventory Item</h4>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input
+                        placeholder="First Name"
+                        id="firstName"
+                        type="text"
+                        class="validate"
+                      />
+                      <label for="user_name"></label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input
+                        placeholder="Last Name"
+                        id="lastName"
+                        type="text"
+                        class="validate"
+                      />
+                      <label for="salePrice"></label>
+                      <div class="modal-footer">
+                        <a
+                          class="addUserBtn modal-close waves-effect waves-light btn-large red"
+                          href="#!"
+                          ><i class="material-icons left">create</i>Add Item
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- INVENTORY TABLE -->
+          <table class="highlight">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Admin</th>
+                <th>Update</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Peter B</td>
+                <td>1</td>
+                <td>
+                  <div class="switch">
+                    <label>
+                      NO
+                      <input id="adminBtn" type="checkbox" />
+                      <span class="lever"></span>
+                      YES
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <a
+                    id="updateUserBtn"
+                    class="btn-floating btn-large waves-effect waves-light red"
+                    ><i class="material-icons">add</i></a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Casey M</td>
+                <td>2</td>
+                <td>
+                  <div class="switch">
+                    <label>
+                      NO
+                      <input id="adminBtn" type="checkbox" />
+                      <span class="lever"></span>
+                      YES
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <a
+                    id="updateUserBtn"
+                    class="btn-floating btn-large waves-effect waves-light red"
+                    ><i class="material-icons">add</i></a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Wren S</td>
+                <td>3</td>
+                <td>
+                  <div class="switch">
+                    <label>
+                      NO
+                      <input id="adminBtn" type="checkbox" />
+                      <span class="lever"></span>
+                      YES
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <a
+                    id="updateUserBtn"
+                    class="btn-floating btn-large waves-effect waves-light red"
+                    ><i class="material-icons">add</i></a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Melissa L</td>
+                <td>4</td>
+                <td>
+                  <div class="switch">
+                    <label>
+                      NO
+                      <input id="adminBtn" type="checkbox" />
+                      <span class="lever"></span>
+                      YES
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <a
+                    id="updateUserBtn"
+                    class="btn-floating btn-large waves-effect waves-light red"
+                    ><i class="material-icons">add</i></a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="./js/users.script.js"></script>
+  </body>
+</html>
