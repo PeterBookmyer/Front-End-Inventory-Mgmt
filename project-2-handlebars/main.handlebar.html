@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShopKeep App</title>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./public/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -15,14 +15,17 @@
       <div class="nav-wrapper">
         <h1 class="h1El"></h1>
         <div class="right responsive-img">
-          <img class="circle" src="My project.jpg" alt="logo" />
+          <img class="circle" src="./public/images/My project.jpg" alt="logo" />
         </div>
       </div>
       <div class="nav-content navEl">
         <ul class="tabs tabs-transparent">
-          <li class="tab"><a href="#test1">View Inventory</a></li>
-          <li class="tab"><a href="#test2">View Users</a></li>
-          <li class="tab"><a href="#test3">Logout</a></li>
+          <li id="homeBtn" class="tab"><a href="#test3">Home</a></li>
+          <li id="viewInventoryBtn" class="tab">
+            <a href="#test1">View Inventory</a>
+          </li>
+          <li id="viewUsersBtn" class="tab"><a href="#test2">View Users</a></li>
+          <li id="logOutBtn" class="tab"><a href="#test3">Logout</a></li>
         </ul>
       </div>
     </nav>
@@ -51,6 +54,7 @@
 
                 <div class="form-field">
                   <button
+                    id="loginBtn"
                     class="btn-large waves-effect waves-dark blue-grey darken-3"
                     style="width: 100%"
                   >
