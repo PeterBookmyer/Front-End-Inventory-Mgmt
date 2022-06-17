@@ -35,3 +35,7 @@ table {
 .addbtn {
   margin-left: 10%;
 }
+
+#modalAddUser {
+  z-index: 5;
+}
