@@ -1,3 +1,7 @@
+body {
+  font-family: 'Lato', 'serif';
+}
+
 img {
   height: 20%;
   margin-right: 20px;
@@ -5,6 +9,23 @@ img {
 
 a {
   font-size: 20px !important;
+  color: white !important;
+}
+
+a:hover {
+  color: grey !important;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+.cardimg {
+  opacity: 70%;
 }
 
 .h1El {
@@ -14,9 +35,20 @@ a {
 }
 
 .topNav {
-  background-image: url("./360_F_279846296_1dEp57xWW86PPhQjoj2oBwHpn419BSH2.jpeg");
+  background-image: url("360_F_279846296_1dEp57xWW86PPhQjoj2oBwHpn419BSH2.jpeg"); height: 50%;
 }
 
 .logInMsg {
   text-align: center;
+}
+
+.card-content {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-content {
+    display: none;
+  }
 }
