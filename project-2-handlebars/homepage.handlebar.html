@@ -1,0 +1,141 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopKeep App</title>
+    <link rel="stylesheet" type="text/css" href="./public/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="topNav nav-extended blue darken-4">
+      <div class="nav-wrapper">
+        <h1 class="h1El"></h1>
+        <div class="right responsive-img">
+          <img class="circle" src="./public/images/My project.jpg" alt="logo" />
+        </div>
+      </div>
+      <div class="nav-content navEl">
+        <ul class="tabs tabs-transparent">
+          <li id="homeBtn" class="tab"><a href="#test3">Home</a></li>
+          <li class="tab">
+            <a
+              href="file:/Users/peterbookmyer/Desktop/Front-End-Inventory-Mgmt/project-2-handlebars/inventory.handlebar.html"
+              >View Inventory</a
+            >
+          </li>
+          <li class="tab">
+            <a
+              href="file:/Users/peterbookmyer/Desktop/Front-End-Inventory-Mgmt/project-2-handlebars/users.handlebar.html"
+              >View Users</a
+            >
+          </li>
+          <li class="tab">
+            <a
+              href="file:///Users/peterbookmyer/Desktop/Front-End-Inventory-Mgmt/project-2-handlebars/main.handlebar.html"
+              >Logout</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <h3>Welcome to ShopKeep!</h3>
+        <h4>Your one stop shop for inventory management.</h4>
+
+        <!-- Grid with images, view inventory option, add to inventory option, update option -->
+
+        <div class="row">
+          <div class="col s3 m4 cards-container">
+            <div class="card blue-grey white-text">
+              <div class="card-image">
+                <img
+                  class="cardimg"
+                  src="./public/images/pexels-maria-lindsey-content-creator-1831825 (1).jpg"
+                  alt="Grocery Items"
+                />
+                <span class="card-title">View</span>
+                <a
+                  class="btn-floating halfway-fab waves-effect waves-light blue-grey lighten-3"
+                  ><i class="material-icons">store</i></a
+                >
+              </div>
+              <div class="card-content">
+                <p>
+                  "View your most recent inventory in order maximize profits,
+                  stay ahead of supply chain, and keep your customers happy!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s3 m4 cards-container">
+            <div class="card blue-grey white-text">
+              <div class="card-image">
+                <img
+                  class="cardimg"
+                  src="./public/images/pexels-polina-tankilevitch-3735179.jpg"
+                  alt="Grocery Dispenser"
+                />
+                <span class="card-title">Add/Update</span>
+                <a
+                  class="btn-floating halfway-fab waves-effect waves-light blue-grey lighten-3"
+                  ><i class="material-icons">add</i></a
+                >
+              </div>
+              <div class="card-content">
+                <p>
+                  "Increasing Demand? Supply chain issues? No prob, we got you
+                  covered - update and add current inventory to stay ahead of
+                  the competition!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s3 m4 cards-container">
+            <div class="card blue-grey white-text">
+              <div class="card-image">
+                <img
+                  class="cardimg"
+                  src="https://i.picsum.photos/id/1/350/200.jpg?hmac=jXaBDOH_nxvv3bnF2rR193RGxOxrRNYuqyV5gbEGK4o"
+                  alt="Computer User"
+                />
+                <span class="card-title">Manage Users</span>
+                <a
+                  class="btn-floating halfway-fab waves-effect waves-light blue-grey lighten-3"
+                  ><i class="material-icons">refresh</i></a
+                >
+              </div>
+              <div class="card-content">
+                <p>
+                  "Employees come and go - easily manage and update users as
+                  well as set admins for who can make changes!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/inventory.script.js"></script>
+    <script src="./js/update.script.js"></script>
+  </body>
+</html>

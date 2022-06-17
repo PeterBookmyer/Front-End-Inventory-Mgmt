@@ -8,14 +8,16 @@ var addInvBtn = document.getElementById("addInvBtn");
 var modalClose = document.getElementsByClassName("modal-close")[0];
 
 // When the user clicks on the button, open the modal
-addInvBtn.onclick = function () {
-  modalAddInv.style.display = "block";
-};
 
-// When the user clicks on btn, close the modal
-modalClose.onclick = function () {
-  modalAddInv.style.display = "none";
-};
+document.addEventListener("DOMContentLoaded", function () {
+  var options = { startingTop: "0%" };
+  var elems = document.querySelectorAll(".modal");
+  var instances = M.Modal.init(elems, options);
+  var instance = M.Modal.getInstance(modalAddInv);
+  addInvBtn.onclick = function () {
+    instance.open();
+  };
+});
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
@@ -23,5 +25,3 @@ window.onclick = function (event) {
     modalAddInv.style.display = "none";
   }
 };
-
-

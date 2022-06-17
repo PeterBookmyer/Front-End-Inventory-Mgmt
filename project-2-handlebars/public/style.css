@@ -3,10 +3,6 @@ img {
   margin-right: 20px;
 }
 
-a {
-  font-size: 20px !important;
-}
-
 .h1El {
   margin: 0%;
   color: black;
@@ -33,9 +29,45 @@ table {
 }
 
 .addbtn {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 #modalAddUser {
   z-index: 5;
+}
+
+body {
+  font-family: "Lato", "serif";
+}
+
+a {
+  font-size: 20px !important;
+  color: white !important;
+}
+
+a:hover {
+  color: grey !important;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+.cardimg {
+  opacity: 70%;
+}
+
+.card-content {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-content {
+    display: none;
+  }
 }
